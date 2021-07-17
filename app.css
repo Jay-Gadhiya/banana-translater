@@ -1,0 +1,68 @@
+*:root {
+    --primary : #f2c94c;
+    --black : black;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    color: #1d0303;
+}
+
+div {
+    display: block;
+}
+
+nav {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+.main {
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+}
+
+button {
+    background-color: var(--primary);
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-family: 'Kalam', cursive;
+}
+
+.trans {
+    font-size: x-large;
+}
+
+#translate-output {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow: scroll;
+    border: 1px solid var(--black);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary);
+    text-align: center;
+}
