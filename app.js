@@ -7,7 +7,7 @@ var serverURL = "https://api.funtranslations.com/translate/groot.json";
 
 
 function getTranslationURL(input) {
-    return serverURL + "?" + "text" + input;
+    return `${serverURL}?text=${input}`;
 }
 
 
