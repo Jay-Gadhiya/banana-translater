@@ -11,14 +11,13 @@ function getTranslationURL(input) {
 }
 
 
-// function errorHandler(error) {
-//     console.log("error occured", error);
-//     alert("Something wrong with server: try again after some time");
-// }
+function errorHandler(error) {
+    alert("Something wrong with server: try again after some time");
+}
 
 
 function clickHandler() {
-    var inputText = textInput.value; //taking input value
+    var inputText = textInput.value;
 
     //calling server for processing
     fetch(getTranslationURL(inputText))
@@ -27,20 +26,10 @@ function clickHandler() {
             var translatedText = json.contents.translated;
             outputText.innerText = translatedText; // Output.   
         })
-        // .catch(errorHandler)
+        .catch(errorHandler)
 };
 
 
 
 btnTranslate.addEventListener("click", clickHandler)
 
-
-
-
-
-
-
-
-
-
-// console.log(textInput.value);   // Use this line in driving repo.
